@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url(img/_3cc6c16f-56e8-430c-bfd6-0fc8bf61260b.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #fff; 
+}
+
+/* Título principal */
+h1 {
+    color: #bc0a24;
+    text-shadow: 2px 2px #000000;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 0; 
+    margin-bottom: 40px; 
+    margin-top: -20%
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 40px;
+    color: rgb(42, 36, 36);
+    text-shadow: 2px 2px #000000;
+    margin: 0;
+}
+
+/* Estilos para los botones */
+.button {
+    background-color: #bc0a24;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    width: 100%
+    
+}
+
+.button:hover {
+    margin: 20px;
+}
+
+/* Contenedor para los botones (hasta 3 por columna) */
+.shop-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 80px; 
+}
+
+/* Contenedor que agrupa la serie de botones y permite el wrap para más de 3 */
+.shop-content .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px; 
+}
+
+/* Diseño de las columnas de botones */
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container .button {
+    width: 200px; 
+}
